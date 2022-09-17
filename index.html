@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1 id="title">RoadToHealthy Fitness Centre Survey Form</h1>
+  <p id="description">RoadToHealthy is a fitness centre which aims for pursuing perfection. For the sake of improvement and better service, we hope that you can complete the survey.<strong>All personal information will be strictly protected and not distribute to the third party. After research, we will destroy all the inputs thoroughly</strong>. Yours opinion is invaluable and here we appreciate for your help. Thank you! </p>
+</header>
+
+<main>
+  <form id="survey-form">
+
+    <div>
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div>
+      <label for="member-id" id="member-id-label">Membership ID</label>
+      <input id="member-id" type="number" min="100000" max="200000" placeholder="Enter your membership ID" required>
+    </div>
+
+    <div>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="1" max="100" placeholder="Enter your age" required>
+    </div>
+
+    <div>
+      <label for="dropdown" id="membership-level-label">Membership Level</label>
+      <select id="dropdown" required>
+        <option disabled selected value>--Select your current membership level--</option>
+        <option value="0-1 years">0-1 years</option>
+        <option value="1-2 years">1-2 years</option>
+        <option value="2-3 years">2-3 years</option>
+        <option value="3-4 years">3-4 years</option>
+        <option value="more than 4 years">more than 4 years</option>
+      </select>
+    </div>
+
+    <div>
+      <label id="area-like-most-label">Which area of the centre do you like the most? </label>
+      <label><input type="radio" name="area-like-most" value="area a" checked>Area A</label><br><label><input type="radio" name="area-like-most" value="area b">Area B</label><br><label><input type="radio" name="area-like-most" value="area c">Area C</label><br><label><input type="radio" name="area-like-most" value="area d">Area D</label><br><label><input type="radio" name="area-like-most" value="area e">Area E</label><br>
+    </div>
+
+    <div>
+      <label for="reason-check-1" id="reason-check-1-label">Why is it your favourite?</label>
+      <textarea id="reason-check-1" placeholder="Enter your command here.." required></textarea>
+    </div>
+
+    <div>
+      <label for="overall-hygiene" id="overall-hygiene-label">Please rank the overall hygiene of the centre: (1 represent the worst and 10 represent the highiest quality)</label>
+      <select id="overall-hygiene" type="dropdown" required>
+        <option disabled selected value>--Rank the overall hygiene--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+
+    <div>
+      <label id="areas-to-be-improve-label">Which areas need to be improved in terms of hygiene? (You can choose more than one options!)</label>
+      <label><input type="checkbox" name="checkbox" value="area-a">Area A</label><br><label><input type="checkbox" name="checkbox" value="area-b">Area B</label><br><label><input type="checkbox" name="checkbox" value="area-c">Area C</label><br><label><input type="checkbox" name="checkbox" value="area-d">Area D</label><br><label><input type="checkbox" name="checkbox" value="area-e">Area E</label><br>
+    </div>
+
+    <div>
+      <label for="reason-check-2" id="reason-check-2-label">Please briefly discribe the situation and environment of your chosen areas so that we know what can be done</label>
+      <textarea id="reason-check-2" placeholder="Enter your command here.." required></textarea>
+    </div>
+
+    <div>
+      <label for="overall-equip" id="overall-equip-label">Please rank the overall equipment quality of the centre (1 is the worst and 10 is the highest quality)</label>
+      <select id="overall-equip" type="dropdown" required>
+        <option disabled selected value>--Rank the overall equip--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+
+
+
+    <div>
+      <label for="text-area" id='other-comment'>Any other commands or suggestions in terms of the equipments? You can briefly suggest some new equipment or what you have observed in some specific / each areas?</label><br>
+      <textarea id="text-area" placeholder="Enter your command here..." required></textarea>
+    </div>
+
+    <br>
+
+    <div>
+      <button type="submit" id="submit" value="submit">Submit</button>
+    </div>
+
+  </form>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>

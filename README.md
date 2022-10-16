@@ -4,4 +4,10 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/sin-chun-hung/pen
 
 A Survey Form - with the purpose of gathering data from service users for analysis and service improvement.  
 
-This page/pen is created by SIN Chun Hung SIMON, a mathematician from The Hong Kong University of Science and Technology (HKUST).
+This page owner information.
+
+SIN,Chun Hung SIMON.
+
+HKUST graduate.
+
+Mathematician. Developer.
